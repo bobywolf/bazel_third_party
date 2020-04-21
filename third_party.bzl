@@ -26,9 +26,17 @@ def third_party_repositories():
         strip_prefix = "rules_python-master",
         urls = ["https://github.com/bazelbuild/rules_python/archive/master.zip"],
     )
+
     http_archive(
         name = "com_google_gtest",
         build_file = "@com_bobywolf_bazel_third_party//:gtest.bzl",
         strip_prefix = "googletest-release-1.10.0",
         urls = ["https://github.com/google/googletest/archive/release-1.10.0.tar.gz"],
+    )
+
+    http_archive(
+        name = "com_gabime_spdlog",
+        build_file = "@com_bobywolf_bazel_third_party//:spdlog.bzl",
+        strip_prefix = "spdlog-release-1.5.0",
+        urls = ["https://github.com/gabime/spdlog/archive/v1.5.0.zip"],
     )
