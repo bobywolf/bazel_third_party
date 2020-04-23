@@ -37,6 +37,6 @@ def third_party_repositories():
     http_archive(
         name = "com_gabime_spdlog",
         build_file = "@com_bobywolf_bazel_third_party//:spdlog.bzl",
-        strip_prefix = "spdlog-release-1.5.0",
+        strip_prefix = "spdlog-1.5.0",
         urls = ["https://github.com/gabime/spdlog/archive/v1.5.0.zip"],
     )
