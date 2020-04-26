@@ -40,3 +40,18 @@ def third_party_repositories():
         strip_prefix = "spdlog-1.5.0",
         urls = ["https://github.com/gabime/spdlog/archive/v1.5.0.zip"],
     )
+
+    http_archive(
+        name = "com_google_glog",
+        strip_prefix = "glog-0.4.0",
+        urls = ["https://github.com/google/glog/archive/v0.4.0.zip"],
+    )
+
+    http_archive(
+        name = "com_github_gflags_gflags",
+        strip_prefix = "gflags-2.2.2",
+        urls = [
+            "https://mirror.bazel.build/github.com/gflags/gflags/archive/v2.2.2.tar.gz",
+            "https://github.com/gflags/gflags/archive/v2.2.2.tar.gz",
+        ],
+    )
